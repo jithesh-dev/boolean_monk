@@ -4,67 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boolean Monk</title>
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/large-screen.css" />
     <link rel="stylesheet" href="./css/svg-with-js.min.css" />
+    <link rel="stylesheet" href="./js/lightbox/simple-lightbox.min.css" />
   </head>
   <body>
-    <header>
-      <img src="./svg/logo.svg" alt="" />
-      <nav class="nav">
-        <a href="#about" class="nav__link">about</a>
-        <a href="#works" class="nav__link">works</a>
-        <a href="#contact" class="nav__link">contact</a>
-      </nav>
-    </header>
 
-    <div class="hero-grid">
-      <img src="./svg/monk.svg" alt="" class="monk-illustration" />
-      <div class="hero-content">
-        <h1 class="hero-title">BE AT PEACE</h1>
-        <h3 class="sub-title">YOU HAVE FOUND YOUR NEW DESIGNER!</h3>
-        <a href="#" class="btn">Get in Touch</a>
+    <div class="hero-grid container">
+      <div class="navbar">
+        <img class="logo" src="./svg/bm-logo.svg" alt="" />
+        <nav class="nav">
+          <a href="#about" class="nav__link">about</a>
+          <a href="#works" class="nav__link">works</a>
+          <a href="#contact" class="nav__link">contact</a>
+        </nav>
       </div>
-      <div class="intro-text">
+      <div class="monk-illustration">
+      <img src="./svg/monk.svg" alt="" class="monk" />
+    </div>
+      <div class="hero-content">
+        <h1 class="hero-title">Be At Peace</h1>
+        <h3 class="sub-title">YOU HAVE FOUND YOUR NEW DESIGNER!</h3>
+        <a href="#" class="h-cta btn">Get in Touch</a>
+      </div>
+      <div class="intro-text-wrapper">
+        <p class="intro-text">
         I design and pilot web projects. I am committed to making innovation
         accessible to all and building an ethical technology.
+      </p>
       </div>
       <span class="scroll-text">SCROLL</span>
     </div>
+    <div class="hello-container">
+    <h1 class="hello-exp expander vertical uppercase">hello</h1>
+  </div>
+  
+  <!-- About section -->
+  <div id="about" class="about-grid section container sub-container">
+    <h1 class="about-expander expander">ABOUT ME</h1>
 
-    <div id="about" class="about-grid section">
-      <h1 class="about-expander expander-title e-t-horizontal">ABOUT ME</h1>
-
-      <div class="prof-pic-container">
-        <img src="./img/Profile-Pic.jpg" alt="" />
-      </div>
-      <div class="a-content">
-        <h5 class="section-headings">JITHESH KUMAR</h5>
-        <p>
-          Hey, I'm Jithesh ,a Creative developer based in Kochi, Kerala,India
-          with a passion for interactive design and development, currently
-          working with the awesome people at Baobab Partners In the past, i have
-          had to work across multiple roles including Backend development,
-          Mobile development and Product design but lately, my interest has
-          gotten more to do with interactive design and front-end
-          implementation.
-        </p>
-        <p>
-          Also a fan of landscape photography and have tried playing around with
-          mobile photography, some of which you can see here . I am available
-          for very interesting gigs, or talks about design, hip-hop, photography
-          or fooood
-        </p>
-      </div>
-      <!-- <h1 class="works-expander expander-title e-t-vertical">WORKS</h1> -->
+    <div class="prof-pic-container">
+      <img src="./img/Profile-Pic.jpg" alt="" />
     </div>
+    <div class="a-content">
+      <h5 class="section-headings">JITHESH KUMAR</h5>
+      <p>
+        Hey, I'm Jithesh ,a Creative developer based in Kochi, Kerala,India
+        with a passion for interactive design and development, currently
+        working with the awesome people at Baobab Partners In the past, i have
+        had to work across multiple roles including Backend development,
+        Mobile development and Product design but lately, my interest has
+        gotten more to do with interactive design and front-end
+        implementation.
+      </p>
+      <p>
+        Also a fan of landscape photography and have tried playing around with
+        mobile photography, some of which you can see here . I am available
+        for very interesting gigs, or talks about design, hip-hop, photography
+        or fooood
+      </p>
+    </div>
+  </div>
 
-    <div id="works" class="f-projects-grid section">
-      <h5 class="section-headings">FEATURED PROJECTS</h5>
-      <div class="project-container">
-        <div class="p-tile">
-          <span>01</span>
-          <h4 class="p-title">ARTE MUSICA</h4>
-          <img src="./img/arte-mockup.png" alt="" />
+  <!-- Featured Works -->
+  <div id="works" class="f-projects-grid container ">
+    <div class="works-exp-wrapper">
+    <h1 class="works-exp expander">WORKS</h1>
+    </div>
+    <h5 class="section-headings">FEATURED PROJECTS</h5>
+    <div class="project-container">
+      <div class="p-tile">
+        
+        <h4 class="p-title"><span>01</span>ARTE MUSICA</h4>
+        <img class="p-img" src="./img/arte-mockup.png" alt="" />
+        <div class="tile-content">
           <p>
             I design and pilot web projects. I am committed to making innovation
             accessible to all and building an ethical technology.I design and
@@ -77,50 +92,62 @@
             <li>WORDPRESS THEME CONVERSION</li>
           </ul>
           <a href="#" class="btn">VIEW PROJECT</a>
-        </div>
+      </div>
       </div>
     </div>
+  </div>
 
-    <div class="o-projects-grid section">
-      <h5 class="section-headings">OTHER PROJECTS</h5>
-      <div class="project-container">
-        <img src="./img/project-1.jpg" alt="" class="op-tile" />
-        <img src="./img/project-1.jpg" alt="" class="op-tile" />
-        <img src="./img/project-1.jpg" alt="" class="op-tile" />
-        <img src="./img/project-1.jpg" alt="" class="op-tile" />
-        <img src="./img/project-1.jpg" alt="" class="op-tile" />
-        <img src="./img/project-1.jpg" alt="" class="op-tile" />
-        <img src="./img/project-1.jpg" alt="" class="op-tile" />
-      </div>
-    </div>
+  <!-- Other Works -->
+  <div class="o-projects-grid section container">
+    <h5 class="section-headings">OTHER PROJECTS</h5>
+    <div class="project-container">
+      <a href="./img/other_works/otherworks_01.png"><img src="./img/other_works/otherworks_01.png" alt="" class="op-tile" /></a>
+      <a href="./img/other_works/otherworks_02.jpg"><img src="./img/other_works/otherworks_02.jpg" alt="" class="op-tile" /></a>
+      <a href="./img/other_works/otherworks_03.png"><img src="./img/other_works/otherworks_03.png" alt="" class="op-tile" /></a>
+      <a href="./img/other_works/otherworks_04.png"><img src="./img/other_works/otherworks_04.png" alt="" class="op-tile" /></a>
+      <a href="./img/other_works/otherworks_05.png"><img src="./img/other_works/otherworks_05.png" alt="" class="op-tile" /></a>
+      <a href="./img/other_works/otherworks_06.png"><img src="./img/other_works/otherworks_06.png" alt="" class="op-tile" /></a>
+      <a href="./img/other_works/otherworks_07.png"><img src="./img/other_works/otherworks_07.png" alt="" class="op-tile" /></a>
+      <a href="./img/other_works/otherworks_08.png"><img src="./img/other_works/otherworks_08.png" alt="" class="op-tile" /></a>
+      <a href="./img/other_works/otherworks_09.png"><img src="./img/other_works/otherworks_09.png" alt="" class="op-tile" /></a>
 
-    <div id="contact" class="contact-grid section">
-      <h1 class="about-expander expander-title e-t-horizontal">CONTACT</h1>
-      <h5 class="section-headings">WANT TO WORK TOGATHER?</h5>
-      <p>
-        I'm always happy to work on/take a look at interesting projects. You can
-        ping me a quick mail here or learn more about me with the links below.
-      </p>
-      <form class="contact-form" action="#">
-        <input type="text" placeholder="Name" class="form-control" />
-        <input type="email" placeholder="Email" class="form-control" />
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Message"
-          class="form-control"
-        ></textarea>
-        <a href="#" class="btn submit-btn"
-          ><i class="fas fa-paper-plane"></i> Send</a
-        >
-      </form>
+      
     </div>
-    <footer>
-      <h5 class="f-name uppercase">Boolean Monk</h5>
-      <h6 class="f-desc uppercase">WEB DEISGN FREELANCER IN KOCHI</h6>
-    </footer>
-    <script src="./js/all.min.js"></script>
-  </body>
+  </div>
+
+  <!-- Contact -->
+  <div id="contact" class="contact-grid section container">
+    <h1 class="works-exp expander">CONTACT</h1>
+    <div class="contact-container">
+    <h5 class="section-headings highlight">WANT TO WORK TOGATHER?</h5>
+    <p>
+      I'm always happy to work on/take a look at interesting projects. You can
+      ping me a quick mail here or learn more about me with the links below.
+    </p>
+    <form class="contact-form" action="#">
+      <input type="text" placeholder="Name" class="form-control" />
+      <input type="email" placeholder="Email" class="form-control" />
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Message"
+        class="form-control"
+      ></textarea>
+      <a href="#" class="btn submit-btn"
+        ><i class="fas fa-paper-plane"></i> Send</a
+      >
+    </form>
+  </div>
+  </div>
+
+  <footer class="container footer">
+    <h5 class="f-name uppercase">Boolean Monk</h5>
+    <h6 class="f-desc uppercase">WEB DEISGN FREELANCER IN KOCHI</h6>
+  </footer>
+  <script src="./js/all.min.js"></script>
+  <script src="./js/lightbox/simple-lightbox.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
 </html>
