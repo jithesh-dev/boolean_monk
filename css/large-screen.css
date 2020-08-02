@@ -130,4 +130,7 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    .contact-container{
+      margin: 0 auto;
+    }
   }
